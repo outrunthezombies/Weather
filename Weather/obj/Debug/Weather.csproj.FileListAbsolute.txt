@@ -1,0 +1,13 @@
+C:\Users\Greg\source\repos\Weather\Weather\bin\Debug\Weather.exe.config
+C:\Users\Greg\source\repos\Weather\Weather\bin\Debug\Weather.exe
+C:\Users\Greg\source\repos\Weather\Weather\bin\Debug\Weather.pdb
+C:\Users\Greg\source\repos\Weather\Weather\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greg\source\repos\Weather\Weather\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.csprojAssemblyReference.cache
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.FormWeather.resources
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.Properties.Resources.resources
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.csproj.GenerateResource.cache
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.csproj.CoreCompileInputs.cache
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.csproj.CopyComplete
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.exe
+C:\Users\Greg\source\repos\Weather\Weather\obj\Debug\Weather.pdb
