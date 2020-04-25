@@ -1,4 +1,6 @@
-﻿namespace Weather
+﻿using System;
+
+namespace Weather
 {
     public class WeatherObject
     {

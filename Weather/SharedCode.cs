@@ -15,9 +15,15 @@ public static class SharedCode
     private static readonly string JSONURL = WeatherAPIURL + WeatherAPI + "?appid=" + APPID + "&lat=" + latitude + "&lon=" + longitude;
     private static string JSONRawData;
     public static WeatherCurrent weather = new WeatherCurrent();
+    public static List<WeatherHourly> weatherHourlyItems = new List<WeatherHourly>();
+    public static List<WeatherDaily> weatherDailyItems = new List<WeatherDaily>();
     public static List<JToken> GetJProperties(List<JToken> items)
     {
         return items;
+    }
+    public static string DateAsString(long value)
+    {
+        return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(value).Subtract(TimeSpan.FromHours(4)).ToString("MMMM dd, yyyy h:mm:ss tt");
     }
     public static void ParseSharedValues(WeatherObject weather, JProperty item)
     {
@@ -145,6 +151,7 @@ public static class SharedCode
                                     break;
                             }
                         }
+                        weatherHourlyItems.Add(weatherHourlyItem);
                     }
                     break;
                 case "daily":
@@ -221,6 +228,7 @@ public static class SharedCode
                                     break;
                             }
                         }
+                        weatherDailyItems.Add(weatherDailyItem);
                     }
                     break;
             }
