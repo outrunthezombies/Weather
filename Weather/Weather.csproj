@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WeatherCurrent.cs" />
+    <Compile Include="WeatherDaily.cs" />
+    <Compile Include="WeatherHourly.cs" />
+    <Compile Include="WeatherObject.cs" />
     <Compile Include="SharedCode.cs" />
     <Compile Include="FormWeather.cs">
       <SubType>Form</SubType>
