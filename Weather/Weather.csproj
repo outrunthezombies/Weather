@@ -49,20 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WeatherCurrent.cs" />
-    <Compile Include="WeatherDaily.cs" />
-    <Compile Include="WeatherHourly.cs" />
-    <Compile Include="WeatherObject.cs" />
+    <Compile Include="WeatherClasses\WeatherCurrent.cs" />
+    <Compile Include="WeatherClasses\WeatherDaily.cs" />
+    <Compile Include="WeatherClasses\WeatherHourly.cs" />
+    <Compile Include="WeatherClasses\WeatherObject.cs" />
     <Compile Include="SharedCode.cs" />
-    <Compile Include="FormWeather.cs">
+    <Compile Include="Forms\FormWeather.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormWeather.Designer.cs">
+    <Compile Include="Forms\FormWeather.Designer.cs">
       <DependentUpon>FormWeather.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormWeather.resx">
+    <EmbeddedResource Include="Forms\FormWeather.resx">
       <DependentUpon>FormWeather.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

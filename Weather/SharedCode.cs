@@ -25,6 +25,49 @@ public static class SharedCode
     {
         return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(value).Subtract(TimeSpan.FromHours(4)).ToString("MMMM dd, yyyy h:mm:ss tt");
     }
+    public static string ReturnTemparature(double value, TempType type)
+    {
+        string returnValue = "";
+        switch (type)
+        {
+            case TempType.Celcius:
+                returnValue = String.Format("{0:0.#}", value - 273.15d) + "°C";
+                break;
+            case TempType.Fahrenheit:
+                returnValue = String.Format("{0:0.#}", (value - 273.15d) * 9d / 5d + 32d) + "°F";
+                break;
+            case TempType.Kelvin:
+                returnValue = String.Format("{0:0.#}", value) + "°K";
+                break;
+        }
+        return returnValue;
+    }
+    public static string ReturnSpeed(double value, SpeedType type)
+    {
+        string returnValue = "";
+        switch (type)
+        {
+            case SpeedType.Kph:
+                returnValue = String.Format("{0:0.#}", value);
+                break;
+            case SpeedType.Mph:
+                returnValue = String.Format("{0:0.#}", value / 1.60934d);
+                break;
+        }
+
+        return returnValue;
+    }
+    public enum TempType
+    {
+        Kelvin = 0,
+        Celcius = 1,
+        Fahrenheit = 2
+    }
+    public enum SpeedType
+    {
+        Kph = 0,
+        Mph = 1
+    }
     public static void ParseSharedValues(WeatherObject weather, JProperty item)
     {
         switch (item.Name)
