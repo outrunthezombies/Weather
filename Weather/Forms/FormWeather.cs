@@ -60,17 +60,17 @@ namespace Weather
                 case "Feels_Like":
                 case "Dew_Point":
                     if (RdoCelcius.Checked)
-                        temp += ReturnTemparature((double)value, TempType.Celcius);
+                        temp += ReturnTemparatureFormatted((double)value, TempType.Celcius);
                     else if (RdoFahrenheit.Checked)
-                        temp += ReturnTemparature((double)value, TempType.Fahrenheit);
+                        temp += ReturnTemparatureFormatted((double)value, TempType.Fahrenheit);
                     else
-                        temp += ReturnTemparature((double)value, TempType.Kelvin);
+                        temp += ReturnTemparatureFormatted((double)value, TempType.Kelvin);
                     break;
                 case "Wind_Speed":
                     if (RdoKph.Checked)
-                        temp += ReturnSpeed((double)value, SpeedType.Kph) + " Kph";
+                        temp += ReturnSpeedFormatted((double)value, SpeedType.Kph) + " Kph";
                     else
-                        temp += ReturnSpeed((double)value, SpeedType.Mph) + " Mph";
+                        temp += ReturnSpeedFormatted((double)value, SpeedType.Mph) + " Mph";
                     break;
                 default:
                     temp += value;

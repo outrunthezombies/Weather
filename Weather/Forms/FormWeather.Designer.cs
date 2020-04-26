@@ -198,4 +198,3 @@
         private System.Windows.Forms.RadioButton RdoKph;
     }
 }
-

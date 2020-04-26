@@ -25,7 +25,7 @@ public static class SharedCode
     {
         return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(value).Subtract(TimeSpan.FromHours(4)).ToString("MMMM dd, yyyy h:mm:ss tt");
     }
-    public static string ReturnTemparature(double value, TempType type)
+    public static string ReturnTemparatureFormatted(double value, TempType type)
     {
         string returnValue = "";
         switch (type)
@@ -42,7 +42,7 @@ public static class SharedCode
         }
         return returnValue;
     }
-    public static string ReturnSpeed(double value, SpeedType type)
+    public static string ReturnSpeedFormatted(double value, SpeedType type)
     {
         string returnValue = "";
         switch (type)
